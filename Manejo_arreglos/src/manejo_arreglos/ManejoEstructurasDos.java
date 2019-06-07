@@ -17,10 +17,12 @@ public class ManejoEstructurasDos {
         String [] listaCiudades = {"Loja", "Catamayo", "Calvas", "Celica", 
             "Pindal"};
         double [] listaSueldos = {900.1, 1000.2, 450.3, 1500.2, 861.9};
+        // de la 15 a la 19 muestran las matrices que utilizaremos
         
         cadena = String.format("%s%s\n", cadena, 
                 "----LISTADO DE TRABJADORES."
                         + "-----\n");
+        // utilize String.format para presentar un solo printf
         
         for (int i = 0; i < listaNombres.length; i++) {
             cadena = String.format("%s%s de la ciudad de %s,\ntiene un sueldo "
@@ -29,5 +31,6 @@ public class ManejoEstructurasDos {
                     listaSueldos[i]);
         }
         System.out.printf("%s", cadena);
+        // presento todos los String.format que cree
     }
 }
